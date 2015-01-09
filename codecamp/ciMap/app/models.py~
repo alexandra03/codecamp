@@ -8,4 +8,3 @@ class Child(models.Model):
 	income = models.IntegerField()
 	sponsored = models.BooleanField(default=False)
 	vip = models.BooleanField(default=False)
-	photo = models.URLField(max_length=200)
