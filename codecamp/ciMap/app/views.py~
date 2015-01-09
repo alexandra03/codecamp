@@ -7,4 +7,4 @@ from django.template import Context, loader
 def home(request):
 	template = loader.get_template('index.html')
 	context = Context({})
-	return HttpResponse(template.render(context))
+	return http.HttpResponse(template.render(context))
