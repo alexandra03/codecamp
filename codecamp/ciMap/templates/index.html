@@ -12,8 +12,79 @@
   <div id="world-map" style="width: 1100px; height: 700px"></div>
   <script>
     $(function(){
-      $('#world-map').vectorMap();
-    });
+      $('#world-map').vectorMap({
+        backgroundColor:'#9FC4F6',
+        colors:{
+          CO:'red',
+          DO:'red',
+          EC:'red',
+          GT:'red',
+          HN:'red',
+          IN:'red',
+          KE:'red',
+          MX:'red',
+          PH:'red',
+          ZM:'red'
+        },
+
+ markerStyle: {
+        initial: {
+          fill: '#F8E23B',
+          stroke: '#383f47',
+          r: 5
+       }
+      },
+        series: {
+          regions:
+          [{
+            values:{
+              IN:'#DE462E',
+              CO:'#DE462E',
+              DO:'#DE462E',
+              EC:'#DE462E',
+              GT:'#DE462E',
+              HN:'#DE462E',
+              IN:'#DE462E',
+              KE:'#DE462E',
+              MX:'#DE462E',
+              PH:'#DE462E',
+              US:'#DE462E',
+              ZM:'#DE462E'
+            }
+
+          }],
+
+
+
+
+    //     markerStyle: {
+    //   initial: {
+    //     fill: '#F8E23B',
+    //     stroke: '#383f47'
+    //   }
+    // },
+
+      },
+
+markers: [
+          {latLng:[4.5833,-74.0667],name:'Colombia'},
+          {latLng:[19.0000,-70.6667],name:'Dominican Republic'},
+          {latLng:[-0.1500,-78.3500],name:'Ecuador'},
+          {latLng:[14.6333,-90.5000],name:'Guatemala'},
+          {latLng:[14.1000,-87.2167],name:'Honduras'},
+          {latLng:[21.0000,78.0000],name:'India'},
+          {latLng:[1.2667,36.8000],name:'Kenya'},
+          {latLng:[19.0000,-99.1333],name:'Mexico'},
+          {latLng:[13.0000,122.0000],name:'Philippines'},
+          {latLng:[38.8833,-77.0167],name:'United States'},
+          {latLng:[-15.4167,28.2833],name:'Zambia'}
+          ]
+
+
+      });
+    })
+
   </script>
 </body>
 </html>
+
