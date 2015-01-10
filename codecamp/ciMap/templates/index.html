@@ -2,34 +2,226 @@
 <html>
 <head>
   <title>Children International</title>
-  <link rel="stylesheet" href="../static/jvectormap/jquery-jvectormap.css" type="text/css" media="screen"/>
-  <script src="../static/jvectormap/jquery.js"></script>
-  <script src="../static/jvectormap/jquery-jvectormap.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="static/css/animate.css">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/templatemo_misc.css">
+	<link rel="stylesheet" href="static/css/templatemo_style.css">
+    <!-- JavaScripts -->
+	<script src="static/js/jquery-1.10.2.min.js"></script>
+	<script src="static/js/jquery.singlePageNav.js"></script>
+	<script src="static/js/jquery.flexslider.js"></script>
+	
+	<script src="static/js/custom.js"></script>
+     <script src="static/js/jquery-1.10.2.min.js"></script>
+	<script src="static/js/jquery.lightbox.js"></script>
+	<script src="static/js/templatemo_custom.js"></script>
+    <script src="static/js/jquery-git2.js"></script><!-- previous next script -->
+
+  <link rel="stylesheet" href="static/jvectormap/jquery-jvectormap.css" type="text/css" media="screen"/>
+  <script src="static/jvectormap/jquery.js"></script>
+  <script src="static/jvectormap/jquery-jvectormap.js"></script>
   <script src ="http://jvectormap.com/js/jquery-jvectormap-1.2.2.min.js"></script>
-  <script src="../static/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="static/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 </head>
 <body>
-  <div id="world-map" style="width: 1100px; height: 700px"></div>
+  	<div class="container">
+    <div style="margin-left: auto; margin-right: auto;"> <!--- TEST -->
+    	<div class="row" style="text-align: center;">
+            <div class="templatemo_title" style="float: none !important;"><a href="#">Children International</a></div>
+                <div class="templatemo_subtitle" style="float: none !important;">Sponsor a Child Today!</div>
+        	<div class="col-md-6 col-sm-6">
+            	
+            </div>
+            <!--<div class="col-md-6 col-sm-6">
+            	<form id="search_form">
+            		<div class="templatemo_search">
+                    	<input name="search" type="text" placeholder="Search here .... " id="search">
+                    </div>
+                </form>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+	<div class="site-header">
+		<div class="main-navigation" stlye="margin-left: auto; margin-right: auto; background-color: blue;">
+			<div class="container">
+            	<div class="row" stlye="margin-left: auto; margin-right: auto; background-color: purple;">
+            	<div class="col-md-12">
+                	<!-- This one in here is responsive menu for tablet and mobiles -->
+                  <div class="responsive-navigation visible-sm visible-xs">
+                   <a href="#" class="menu-toggle-btn">
+                    <i class="fa fa-bars fa-2x"></i>
+                  </a>
+       			 <div class="navigation responsive_menu">
+          			 <ul>
+					<li><a class="show-1 templatemo_home" href="#">Main Page</a></li>
+					<li><a class="show-2 templatemo_page2" href="#">Service</a></li>
+					<li><a class="show-3 templatemo_page3" href="#">Portfolio</a></li>
+					<li><a class="show-5 templatemo_page5" href="#">Contact</a></li>
+				</ul>
+    	    </div> <!-- /.responsive_menu -->
+   		 </div> <!-- /responsive_navigation -->
+                </div>
+            </div>
+            </div>
+
+			<div class="container">
+				<div class="row">
+                     <div class="col-md-12 navigation">
+						<div class="row main_menu" style="margin-left: 260px;">
+                    		<!--<div class="col-md-2"><a id="prev">Prev</a></div> -->
+
+							<div class="col-md-2"><a class="show-1 templatemo_home" href="#"><label for="Children In Need">In Need</label></a></div>
+							<div class="col-md-2"><a class="show-2 templatemo_page2" href="#"><label for="Sponsored Children">Sponsored Children</label></a></div>
+							<div class="col-md-2"><a class="show-3 templatemo_page3" href="#"><label for="Our Sponsors ">Our Sponsors</label></a></div>
+							<div class="col-md-2"><a class="show-5 templatemo_page5" href="#"><label for="Our Locations ">Our Locations</label></a></div>
+
+
+                           <!-- <div class="col-md-2"><a id="next">Next</a></div>-->
+							
+						</div> 
+                    </div>
+				</div> 
+			</div> 
+		</div> 
+</div></div>
+
+
+
+
+
+    <div id="menu-container">
+
+	<div class="divs">
+<!-- homepage start -->
+	<div class="content homepage" id="menu-1">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<div class="main-slider">
+				<div class="flexslider">
+					<div id="world-map" style="width: 1100px; height: 700px"></div>
+				</div>
+			</div>
+
+             <!-- portfolio start -->
+
+	</br></br>
+            <div class="test1" id="menu-3">
+              <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--<h1>Our portfolio</h1> -->
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+   
+                    </div>
+              </div>
+              </div>
+            <!-- portfolio end -->
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+<!-- homepage end -->
+
+
  {% for child in child_list %}
+        <div class="col-lg-2 col-sm-3 col-xs-4">
+
 	<div id="container" style="position:relative">
 		<div id="photo" style="z-index:10;position:relative">
 			<img src="{{ child.fields.photo }}" onmouseover="$(this).fadeTo('fast', 0, function(){})" onmouseout="$(this).fadeTo('slow', 1, function(){})">
 		</div>
-		<div id={{ child.pk }} style="position:absolute;bottom:50%;top:50%">
-			{{ child.fields.name }}</br>
-			{{ child.fields.age }} years</br>
-			{{ child.fields.country }}</br>
-			${{ child.fields.income }}</br>
+		<div id={{ child.pk }} style="position:absolute;top:0px;width:200px;margin-top:10px">
+			<span style="font-weight:bold">{{ child.fields.name }}</span></br>
+			<b>Age: </b>{{ child.fields.age }} years</br>
+			<b>Country: </b>{{ child.fields.country }}</br>
+			<b>Family Income:</b> ${{ child.fields.income }}</br></br>
+			<b>Interests:</b>{{ child.fields.interests }}</br>
 		</div>
 	</div>
+</div>
  {% endfor %}
   <script>
-    $(function(){
-      $('#world-map').vectorMap();
-    });
     $( "" ).hover(function() {
   	 $( this ).hide();
 });
+  </script>
+ <script>
+    $(function(){
+      $('#world-map').vectorMap({
+        backgroundColor:'#9FC4F6',
+        colors:{
+          CO:'red',
+          DO:'red',
+          EC:'red',
+          GT:'red',
+          HN:'red',
+          IN:'red',
+          KE:'red',
+          MX:'red',
+          PH:'red',
+          ZM:'red'
+        },
+
+ markerStyle: {
+        initial: {
+          fill: '#F8E23B',
+          stroke: '#383f47',
+          r: 5
+       }
+      },
+        series: {
+          regions:
+          [{
+            values:{
+              IN:'#DE462E',
+              CO:'#DE462E',
+              DO:'#DE462E',
+              EC:'#DE462E',
+              GT:'#DE462E',
+              HN:'#DE462E',
+              IN:'#DE462E',
+              KE:'#DE462E',
+              MX:'#DE462E',
+              PH:'#DE462E',
+              US:'#DE462E',
+              ZM:'#DE462E'
+            }
+         }],
+
+      },
+
+markers: [
+          {latLng:[4.5833,-74.0667],name:'Colombia'},
+          {latLng:[19.0000,-70.6667],name:'Dominican Republic'},
+          {latLng:[-0.1500,-78.3500],name:'Ecuador'},
+          {latLng:[14.6333,-90.5000],name:'Guatemala'},
+          {latLng:[14.1000,-87.2167],name:'Honduras'},
+          {latLng:[21.0000,78.0000],name:'India'},
+          {latLng:[1.2667,36.8000],name:'Kenya'},
+          {latLng:[19.0000,-99.1333],name:'Mexico'},
+          {latLng:[13.0000,122.0000],name:'Philippines'},
+          {latLng:[38.8833,-77.0167],name:'United States'},
+          {latLng:[-15.4167,28.2833],name:'Zambia'}
+          ]
+
+
+      });
+    })
+ 
+
   </script>
 </body>
 </html>
