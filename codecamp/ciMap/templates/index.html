@@ -11,16 +11,25 @@
 <body>
   <div id="world-map" style="width: 1100px; height: 700px"></div>
  {% for child in child_list %}
-	{{ child.fields.name }}
-	{{ child.fields.age }}
-	{{ child.fields.country }}
-	{{ child.fields.income }}
-	<img src="{{ child.fields.photo }}">
+	<div id="container" style="position:relative">
+		<div id="photo" style="z-index:10;position:relative">
+			<img src="{{ child.fields.photo }}" onmouseover="$(this).fadeTo('fast', 0, function(){})" onmouseout="$(this).fadeTo('slow', 1, function(){})">
+		</div>
+		<div id={{ child.pk }} style="position:absolute;bottom:50%;top:50%">
+			{{ child.fields.name }}</br>
+			{{ child.fields.age }} years</br>
+			{{ child.fields.country }}</br>
+			${{ child.fields.income }}</br>
+		</div>
+	</div>
  {% endfor %}
   <script>
     $(function(){
       $('#world-map').vectorMap();
     });
+    $( "" ).hover(function() {
+  	 $( this ).hide();
+});
   </script>
 </body>
 </html>
