@@ -9,4 +9,3 @@ class childInfo(admin.ModelAdmin):
 	list_filter = ['age', 'country']
 
 admin.site.register(Child, childInfo)
-# Register your models here.

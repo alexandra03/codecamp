@@ -56,9 +56,9 @@
             <div class="col-md-12 navigation">
   						<div class="row main_menu" style="margin-left: 260px;">
   							<div class="col-md-2"><a class="show-1 templatemo_home" href="#"><label for="Children In Need">In Need</label></a></div>
-  							<div class="col-md-2"><a class="show-2 templatemo_page2" href="#"><label for="Sponsored Children">Sponsored Children</label></a></div>
-  							<div class="col-md-2"><a class="show-3 templatemo_page3" href="#"><label for="Our Sponsors ">Our Sponsors</label></a></div>
-  							<div class="col-md-2"><a class="show-5 templatemo_page5" href="#"><label for="Our Locations ">Our Locations</label></a></div>
+  							<div class="col-md-2"><a class="show-2 templatemo_home" href="#"><label for="Sponsored Children">Sponsored Children</label></a></div>
+  							<div class="col-md-2"><a class="show-3 templatemo_home" href="#"><label for="Our Sponsors ">Our Sponsors</label></a></div>
+  							<div class="col-md-2"><a class="show-5 templatemo_home" href="#"><label for="Our Locations ">Our Locations</label></a></div>
   						</div> 
             </div>
   				</div> 
@@ -76,13 +76,13 @@
         				<div class="flexslider">
         					<div id="world-map" style="width: 1100px; height: 700px"></div>
         				</div>
-			        </div>
-	            </br></br>
-            </div>
+		          </div>
+            </br></br>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
  {% for child in child_list %}
     <div class="col-lg-2 col-sm-3 col-xs-4">
@@ -95,7 +95,8 @@
     			<b>Age: </b>{{ child.fields.age }} years</br>
     			<b>Country: </b>{{ child.fields.country }}</br>
     			<b>Family Income:</b> ${{ child.fields.income }}</br></br>
-    			<b>Interests:</b>{{ child.fields.interests }}</br>
+    			<b>Interests:</b>{{ child.fields.interests }}</br></br>
+          <a href="#">Sponsor me</a>
     		</div>
 	    </div>
     </div>
