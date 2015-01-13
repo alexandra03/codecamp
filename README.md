@@ -9,3 +9,12 @@ Children International Website: https://www.children.org/
 
 To run locally, update the template directory in /codecamp/ciMap/ciMap/settings.py and run ```python manage.py runserver ```
 from /codecamp/ciMap
+
+### Map with locations of community centres run by Children International
+![Screenshot](/codecamp/ciMap/app/static/images/screen.png?raw=true "Map")
+
+### Tiles with children's pictures, in need of sponsorship
+![Screenshot](/codecamp/ciMap/app/static/images/children.png?raw=true "Children in need of sponsorship")
+
+### Details of children revealed on hover
+![Screenshot](/codecamp/ciMap/app/static/images/details.png?raw=true "Details of children")
